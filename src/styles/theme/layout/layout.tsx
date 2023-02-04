@@ -8,15 +8,14 @@ import {
 import React, { PropsWithChildren } from "react";
 import { LayoutProps } from "./layout.types";
 import { ThemeProvider as SCThemeProvider } from "styled-components";
-import { theme } from "../../styles/theme/ui-theme";
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
+import { theme } from "../theme";
+import { Navbar } from "../../../components";
 
 export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
   children,
 }) => {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: light)");
   const values = { xs: 470, sm: 640, md: 1280, lg: 1920, xl: 2400 };
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   const globalTheme = React.useMemo(
     () =>
@@ -36,7 +35,7 @@ export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
             }px)`,
         },
         palette: {
-          mode: prefersDarkMode ? "dark" : "light",
+          mode: prefersDarkMode ? "light" : "dark",
         },
       }),
     [prefersDarkMode]
@@ -45,10 +44,9 @@ export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
   return (
     <ThemeProvider theme={globalTheme}>
       <CssBaseline />
-      <SCThemeProvider theme={theme}>
-        <Header />
+      <SCThemeProvider theme={globalTheme}>
+        <Navbar />
         {children}
-        <Footer />
       </SCThemeProvider>
     </ThemeProvider>
   );

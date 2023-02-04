@@ -9,5 +9,8 @@ export const theme = createTheme({
             lg: 1920,
             xl: 2400,
         }
+    },
+    palette: {
+        mode: "dark" || "light"
     }
 });

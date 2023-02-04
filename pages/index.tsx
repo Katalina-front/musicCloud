@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 
-const HomePageWithNoSSR = dynamic(() => import("../src/pages/home/home"), {
+const HomePageWithNoSSR = dynamic(() => import("./home/home"), {
   ssr: false,
 });
 
