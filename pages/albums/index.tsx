@@ -1,13 +1,13 @@
 import { NextPage } from "next";
 import React from "react";
 
-const Traks: NextPage = () => {
+const Albums: NextPage = () => {
   return (
     <div className="center">
       <div>Список треков</div>
-      <h5>здесь собраны лучшие треки</h5>
+      <h5>здесь собраны лучшие альбомы</h5>
     </div>
   );
 };
 
-export default Traks;
+export default Albums;

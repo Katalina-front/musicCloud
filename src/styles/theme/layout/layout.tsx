@@ -10,6 +10,7 @@ import { LayoutProps } from "./layout.types";
 import { ThemeProvider as SCThemeProvider } from "styled-components";
 import { theme } from "../theme";
 import { Navbar } from "../../../components";
+import { SBox } from "./layout.styles";
 
 export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
   children,
@@ -46,7 +47,7 @@ export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
       <CssBaseline />
       <SCThemeProvider theme={globalTheme}>
         <Navbar />
-        {children}
+        <SBox>{children}</SBox>
       </SCThemeProvider>
     </ThemeProvider>
   );

@@ -1,13 +1,13 @@
 import { NextPage } from "next";
 import React from "react";
 
-const Traks: NextPage = () => {
+const ForYou: NextPage = () => {
   return (
     <div className="center">
       <div>Список треков</div>
-      <h5>здесь собраны лучшие треки</h5>
+      <h5>Твоя библиотека</h5>
     </div>
   );
 };
 
-export default Traks;
+export default ForYou;

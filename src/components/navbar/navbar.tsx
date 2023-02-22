@@ -1,6 +1,5 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
 import AppBar from "@mui/material/AppBar";
 import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
@@ -10,11 +9,14 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import HomeIcon from "@mui/icons-material/Home";
+import MusicNoteIcon from "@mui/icons-material/MusicNote";
+import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import Icon from "../../assets/icon.svg";
-import { SToolbar } from "./navbar.styles";
+import { SDrawer, SIconWrapper, SToolbar } from "./navbar.styles";
 import { useRouter } from "next/router";
+import { Search } from "./search";
 
 const drawerWidth = 240;
 
@@ -22,7 +24,7 @@ const menuItems = [
   { text: "Главная", href: "/" },
   { text: "Треки", href: "/traks" },
   { text: "Альбомы", href: "/albums" },
-  { text: "Для тебя", href: "/" },
+  { text: "Для тебя", href: "/for-you" },
 ];
 
 export const Navbar = () => {
@@ -35,13 +37,16 @@ export const Navbar = () => {
         sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
       >
         <SToolbar>
-          <Icon className="icon" />
+          <SIconWrapper>
+            <Icon className="icon" />
+          </SIconWrapper>
           <Typography variant="h4" noWrap component="div">
             Music Wave
           </Typography>
+          <Search />
         </SToolbar>
       </AppBar>
-      <Drawer
+      <SDrawer
         variant="permanent"
         sx={{
           width: drawerWidth,
@@ -67,7 +72,10 @@ export const Navbar = () => {
                 >
                   <ListItemButton>
                     <ListItemIcon>
-                      {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                      {index === 0 && <HomeIcon />}
+                      {index === 1 && <MusicNoteIcon />}
+                      {index === 2 && <LibraryMusicIcon />}
+                      {index === 3 && <FavoriteIcon />}
                     </ListItemIcon>
                     <ListItemText primary={text} />
                   </ListItemButton>
@@ -76,7 +84,7 @@ export const Navbar = () => {
             )}
           </List>
         </Box>
-      </Drawer>
+      </SDrawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
       </Box>
