@@ -1,2 +1,4 @@
 export * from "../components/navbar/index";
-export * from "./genre"
+export * from "./genres";
+export * from "./hits";
+export * from "./artists";

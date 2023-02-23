@@ -1,6 +1,8 @@
 import { NextPage } from "next";
 import React from "react";
-import Genres from "../../src/components/genre/genre";
+import { Genres } from "../../src/components";
+import Artists from "../../src/components/artists/artists";
+import { Hits } from "../../src/components/hits";
 import { SPopularTraksWrapper, SWrapper } from "./home.styles";
 
 const Home: NextPage = () => {
@@ -26,8 +28,14 @@ const Home: NextPage = () => {
           <p className="title">ТЕГИ</p>
           <Genres />
         </div>
-        <div className="traks">Треки недели</div>
-        <div className="traks">Исполинели</div>
+        <div className="traks">
+          <p className="title">ТОП - ХИТОВ</p>
+          <Hits />
+        </div>
+        <div className="traks">
+          <p className="title">ТОП - ИСПОЛНИТЕЛЕЙ</p>
+          <Artists />
+        </div>
       </SWrapper>
     </>
   );
