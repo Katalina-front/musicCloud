@@ -1,6 +1,11 @@
+import { Paper } from "@mui/material";
 import React from "react";
-import { SContainerFooter } from "./footer.styles";
+import { SToolbar } from "./footer.styles";
 
 export const Footer = () => {
-  return <SContainerFooter>Footer</SContainerFooter>;
+  return (
+      <SToolbar>
+        <div>Player</div>
+      </SToolbar>
+  );
 };

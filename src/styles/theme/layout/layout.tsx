@@ -9,8 +9,8 @@ import React, { PropsWithChildren } from "react";
 import { LayoutProps } from "./layout.types";
 import { ThemeProvider as SCThemeProvider } from "styled-components";
 import { theme } from "../theme";
-import { Navbar } from "../../../components";
 import { SBox } from "./layout.styles";
+import { Footer, Navbar } from "../../../components";
 
 export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
   children,
@@ -48,6 +48,7 @@ export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
       <SCThemeProvider theme={globalTheme}>
         <Navbar />
         <SBox>{children}</SBox>
+        <Footer />
       </SCThemeProvider>
     </ThemeProvider>
   );
