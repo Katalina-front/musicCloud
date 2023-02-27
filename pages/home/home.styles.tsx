@@ -10,8 +10,8 @@ export const SPopularTraksWrapper = styled.div`
   height: fit-content;
   text-align: center;
   border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 0px 10px 20px 10px;
+  margin-bottom: 40px;
   color: #d7d7d7;
   -webkit-box-shadow: 3px 1px 10px 2px rgba(225, 68, 112, 0.2);
   -moz-box-shadow: 3px 1px 10px 2px rgba(225, 68, 112, 0.2);
@@ -88,5 +88,6 @@ export const SRadio = styled.div`
     text-align: center;
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 20px;
   }
 `;

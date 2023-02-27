@@ -5,7 +5,7 @@ import { SPopularTraksWrapper, SRadio, SWrapper } from "./home.styles";
 
 const Home: NextPage = () => {
   return (
-    <>
+    < >
       <SPopularTraksWrapper>
         <h2>Добро пожаловать на Music Wave!</h2>
         <p>

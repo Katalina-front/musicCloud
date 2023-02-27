@@ -1,8 +1,6 @@
 import { SongImage } from "./song-image/song-image";
 import { ITEMS_HITS } from "./hits.constants";
 import {
-  SFavoriteBorderOutlinedIcon,
-  SFavoriteOutlinedIcon,
   SHitCell,
   SHitsWrapper,
   SPauseCircleOutlinedIcon,
@@ -15,7 +13,6 @@ import ButtonFollow from "./button/follow/button";
 
 export const Hits = () => {
   const hits = useGetHits();
-  // const [liked, setLiked] = useState(false);
 
   return (
     <SHitsWrapper>

@@ -10,6 +10,7 @@ export const SGenresWrapper = styled.div`
 
   ::-webkit-scrollbar {
     width: 0;
+    background-color: transparent;
   }
 `;
 

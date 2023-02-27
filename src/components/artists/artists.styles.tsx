@@ -12,6 +12,7 @@ export const SArtistsWrapper = styled.div`
 
   ::-webkit-scrollbar {
     width: 0;
+    background-color: transparent;
   }
 `;
 

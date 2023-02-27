@@ -2,6 +2,7 @@ import {
   Breakpoint,
   createTheme,
   CssBaseline,
+  darkScrollbar,
   ThemeProvider,
   useMediaQuery,
 } from "@mui/material";
@@ -37,6 +38,13 @@ export const Layout: React.FC<PropsWithChildren<LayoutProps>> = ({
         },
         palette: {
           mode: prefersDarkMode ? "light" : "dark",
+        },
+        components: {
+          MuiCssBaseline: {
+            styleOverrides: (themeParam) => ({
+              body: themeParam.palette.mode === "dark" ? darkScrollbar() : null,
+            }),
+          },
         },
       }),
     [prefersDarkMode]

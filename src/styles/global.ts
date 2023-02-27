@@ -17,5 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     display: flex !important;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden !important;
   }
 `;
