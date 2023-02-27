@@ -4,10 +4,16 @@ export const SGenresWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  overflow: scroll;
+  height: 100%;
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 `;
 
 export const SGenresCell = styled.a`
-  height: 100%;
   width: fit-content;
   border: 2px solid #4744e1;
   border-radius: 10px;

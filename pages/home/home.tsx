@@ -1,9 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
-import { Genres } from "../../src/components";
-import Artists from "../../src/components/artists/artists";
-import { Hits } from "../../src/components/hits";
-import { SPopularTraksWrapper, SWrapper } from "./home.styles";
+import { Artists, Genres, Hits, Radio } from "../../src/components";
+import { SPopularTraksWrapper, SRadio, SWrapper } from "./home.styles";
 
 const Home: NextPage = () => {
   return (
@@ -37,6 +35,10 @@ const Home: NextPage = () => {
           <Artists />
         </div>
       </SWrapper>
+      <SRadio>
+        <div className="title">Радио</div>
+        <Radio />
+      </SRadio>
     </>
   );
 };

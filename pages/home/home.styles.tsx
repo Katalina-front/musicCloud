@@ -60,10 +60,10 @@ export const SWrapper = styled.div`
 
   .traks {
     width: 100%;
-    height: 180px auto;
+    height: 230px;
     border-radius: 10px;
     border: 2px solid #873feb;
-    padding: 10px;
+    padding: 10px 10px 28px 10px;
 
     :nth-child(1) {
       margin-right: 10px;
@@ -78,5 +78,15 @@ export const SWrapper = styled.div`
     margin: 0 0 10px 0;
     padding-left: 5px;
     text-align: center;
+  }
+`;
+
+export const SRadio = styled.div`
+  margin-top: 20px;
+
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
   }
 `;
