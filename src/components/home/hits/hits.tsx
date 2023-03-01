@@ -1,15 +1,8 @@
 import { SongImage } from "./song-image/song-image";
-import { ITEMS_HITS } from "./hits.constants";
-import {
-  SHitCell,
-  SHitsWrapper,
-  SPauseCircleOutlinedIcon,
-  SPlayCircleOutlineOutlinedIcon,
-} from "./hits.styles";
-import { useState } from "react";
+import { SHitCell, SHitsWrapper, SPauseIcon, SPlayIcon } from "./hits.styles";
 import { Track } from "./track/track";
 import { useGetHits } from "./hits.requests";
-import ButtonFollow from "./button/follow/button";
+import ButtonFollow from "../../button/follow/button";
 
 export const Hits = () => {
   const hits = useGetHits();
@@ -33,11 +26,8 @@ export const Hits = () => {
               />
               <ButtonFollow />
               <a href={item.audio}>
-                <SPlayCircleOutlineOutlinedIcon
-                  fontSize="large"
-                  color="secondary"
-                />
-                <SPauseCircleOutlinedIcon fontSize="large" color="secondary" />
+                <SPlayIcon fontSize="large" color="secondary" />
+                <SPauseIcon fontSize="large" color="secondary" />
               </a>
             </SHitCell>
           )

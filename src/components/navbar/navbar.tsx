@@ -22,8 +22,8 @@ const drawerWidth = 240;
 
 const menuItems = [
   { text: "Главная", href: "/" },
-  { text: "Треки", href: "/traks" },
   { text: "Альбомы", href: "/albums" },
+  { text: "Исполнители", href: "/artists" },
   { text: "Для тебя", href: "/for-you" },
 ];
 

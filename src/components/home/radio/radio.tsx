@@ -1,11 +1,3 @@
-import {
-  Key,
-  ReactElement,
-  JSXElementConstructor,
-  ReactFragment,
-  ReactPortal,
-} from "react";
-import { ITEMS_RADIO } from "./radio.constants";
 import { useGetRadio } from "./radio.requests";
 import { SCarousel, SCell, SScrollableContainer } from "./radio.styles";
 

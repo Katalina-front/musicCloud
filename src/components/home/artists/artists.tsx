@@ -1,4 +1,3 @@
-import { ITEMS_ARTISTS } from "./artists.constants";
 import { useGetArtists } from "./artists.requests";
 import { SArtistsCell, SArtistsWrapper } from "./artists.styles";
 

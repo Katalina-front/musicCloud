@@ -1,6 +1,5 @@
 import React from "react";
 import { Key } from "react";
-import { ITEMS_GENRES } from "./genres.constants";
 import { useGetGenres } from "./genres.request";
 import { SGenresCell, SGenresWrapper } from "./genres.styles";
 

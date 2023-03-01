@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import { Artists, Genres, Hits, Radio } from "../../src/components";
+import { Artists, Genres, Hits, Radio } from '../../src/components/home';
 import { SPopularTraksWrapper, SRadio, SWrapper } from "./home.styles";
 
 const Home: NextPage = () => {

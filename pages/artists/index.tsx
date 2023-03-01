@@ -1,13 +1,14 @@
 import { NextPage } from "next";
 import React from "react";
+import { STitle } from "./artists.styles";
 
-const Traks: NextPage = () => {
+const Artists: NextPage = () => {
   return (
     <div className="center">
-      <div>Список треков</div>
+      <STitle>Исполнители</STitle>
       <h5>здесь собраны лучшие треки</h5>
     </div>
   );
 };
 
-export default Traks;
+export default Artists;

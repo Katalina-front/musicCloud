@@ -32,6 +32,11 @@ export const SCell = styled.div`
   width: fit-content;
   margin-right: 5px;
 
+  :hover {
+    color: #e14470;
+    text-shadow: #e14470 1px 0 10px;
+  }
+
   .item {
     display: flex;
     width: 160px;
