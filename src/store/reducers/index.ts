@@ -1,9 +1,9 @@
 import { HYDRATE } from 'next-redux-wrapper';
 import { combineReducers } from 'redux';
-import { playerReducer } from './player-reducer';
+import { playerReducer } from './player/player-reducer';
 
-const rootReducer = combineReducers({
-    player: playerReducer
+export const rootReducer = combineReducers({
+    player: playerReducer,
 })
 
 export const reducer = (state: any, action: any) => {

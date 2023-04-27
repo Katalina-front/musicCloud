@@ -1,10 +1,8 @@
 export interface ITrack {
-    _id?: string;
+    id?: string;
     name?: string;
-    artist?: string;
-    text?: string;
-    listens?: number;
-    picture?: string;
+    artist_name?: string;
+    image?: string;
     audio?: string;
 }
 

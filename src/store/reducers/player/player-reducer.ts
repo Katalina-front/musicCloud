@@ -2,7 +2,7 @@ import { PlayerActionTypes, PlayerState, TPlayerAction } from './player-reducer.
 
 const initialState: PlayerState = {
     active: null,
-    volume: 0,
+    volume: 50,
     duration: 0,
     currentTime: 0,
     pause: true

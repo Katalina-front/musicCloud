@@ -1,4 +1,4 @@
-import { Context, createWrapper, MakeStore } from 'next-redux-wrapper';
+import { Context, createWrapper } from 'next-redux-wrapper';
 import { legacy_createStore as createStore } from 'redux'
 import { reducer } from './reducers';
 

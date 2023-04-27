@@ -33,26 +33,36 @@ export const SToolbar = styled.div`
 `;
 
 export const SCover = styled.div`
-  width: 40px;
+  display: flex;
+  width: 70%;
   height: 40px;
-  border: 2px solid #959595b5;
   border-radius: 4px;
   margin: 5px;
+
+  .inform {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 12px;
+    color: white;
+  }
 `;
 
-export const SButtons = styled.div`
+export const SButtonPlay = styled.div`
+  background-color: transparent;
+  margin-right: 30px;
+`;
+
+export const SButtonVolume = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const SButtonSocial = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 90%;
-
-  svg {
-    margin: 0 5px 0 5px;
-    color: #959595b5;
-
-    :hover {
-      color: #ffffff;
-    }
-  }
+  justify-content: space-around;
+  width: 100px;
 `;

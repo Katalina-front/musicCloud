@@ -16,7 +16,7 @@ export const TrackProgress: React.FC<TrackProgressType> = ({
     <STrackContainer>
       <input
         type="range"
-        min={left}
+        min={0}
         max={right}
         value={left}
         onChange={onChange}
